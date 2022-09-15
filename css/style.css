@@ -3,14 +3,32 @@ body {
 	font-family: "Shrikhand", serif;
 }
 
-a {
+*{
 	text-decoration: none;
+	list-style: none;
 }
 
-h1, p, a {
+:root {
+	--violet-color: #9356DC;
+	--pink-color: #FF79DA;
+	--green-color: #99E2D0;
+
+}
+
+h1, h2, h3, p, a {
 	font-family: "Roboto";
 }
 
+footer h3 {
+	font-family: "Shrikhand";
+}
+
+
+
+
+/*-----------------------*\
+          HEADER
+\*-----------------------*/
 .search-bar {
 	display: flex;
 }
