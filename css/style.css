@@ -1,6 +1,7 @@
+
 body {
-	font-family: "Roboto", serif;
 	font-family: "Shrikhand", serif;
+	font-family: "Roboto", serif;
 }
 
 *{
@@ -12,25 +13,127 @@ body {
 	--violet-color: #9356DC;
 	--pink-color: #FF79DA;
 	--green-color: #99E2D0;
+	--white-color: #fff;
+	--black-color: #000;
 
+	--Roboto-font: "Roboto";
+	--Shrikhand-font: "Shrikhand";
 }
 
-h1, h2, h3, p, a {
+/*NOTE ROBOTO FONT*/
+.Rob {
+	font-family: var(--Roboto-font);
+}
+
+/*NOTE SHRIKHAND FONT*/
+.Shr {
+	font-family: var(--Shrikhand-font);
+}
+
+
+/*NOTE POLICES HEADER and MAIN*/
+a {
 	font-family: "Roboto";
 }
 
-footer h3 {
-	font-family: "Shrikhand";
+/*NOTE CARDS RADIUS and ELEMENTS*/
+.rad {
+	border-radius: 18px;
 }
-
-
 
 
 /*-----------------------*\
           HEADER
 \*-----------------------*/
-.search-bar {
-	display: flex;
+
+#logo {
+	padding: 16px 0 16px 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.header-form h1 {
+	font-weight: 500;
+	font-size: 27px
+}
+
+button {
+	display: block;
+	width: 210px;
+	height: 50px;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+	border: none;
+	color: var(--white-color);
+	padding: 5px;
+	box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+
+}
+/*-----------------------*\
+          MAIN
+\*-----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------*\
+          FOOTER
+\*-----------------------*/
+footer {
+	background-color: var(--black-color);
+	color: var(--white-color);
+	width: 100%;
+}
+
+footer a {
+	color: var(--white-color);
 }
 
 
+
+/*-----------------------*\
+      	MEDIA MOBILE
+\*-----------------------*/
+
+@media screen and (max-width: 768px) {
+	.search-bar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.header-form h1, p {
+		text-align: center;
+		padding: 0 47px 0 47px;
+	}
+
+	.fas fa-map-marker {
+		display: flex;
+		justify-content: space-between;;
+	}
+
+	form {
+	display: flex;
+	padding: 16px 0 16px 0;
+	justify-items: center;
+	}
+
+}

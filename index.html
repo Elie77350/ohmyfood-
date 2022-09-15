@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Ohmyfood!, page d'accueil</title>
 </head>
@@ -19,17 +20,15 @@
 	<!--[ HEADER ]-->
 	<header>
 		<div class="header-form">
-			<img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood de couleur noir">
+			<img id="logo" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood de couleur noir">
 			<div class="search-bar">
 				<i class="fas fa-map-marker-alt"></i>
-				<form method="post" action="#">
-					<input type="text" placeholder="Paris, Belleville">
-				</form>
+				<span class="search-text">Paris, Belleville</span>
 			</div>
 			<h1>Réservez le menu qui vous convient</h1>
 			<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 			<a href="#">
-				<button type="button" class="Explorer nos restaurants" </button>
+				<button type="button" class="btn">Explorer nos restaurants</button>
 			</a>
 		</div>
 	</header>
@@ -112,7 +111,7 @@
 									<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="table dressée présentant une plat gastronomique">
 									<div class="text-card">
 										<h3>À la française</h3>
-										<p>CIté Rouge</p>
+										<p>Cité Rouge</p>
 										<i class="far fa-heart"></i>
 									</div>
 								</div>
@@ -141,7 +140,7 @@
 		<!--[ FOOTER ]-->
 		<div class="footer">
 		<footer>
-			<h3>ohmyfood</h3>
+			<h3 class="Shr">ohmyfood</h3>
 			<ul>
 				<li>
 					<i class="fas fa-utensils"></i>
