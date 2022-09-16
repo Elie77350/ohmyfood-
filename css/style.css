@@ -7,6 +7,7 @@ body {
 *{
 	text-decoration: none;
 	list-style: none;
+	color: inherit
 }
 
 :root {
@@ -15,21 +16,16 @@ body {
 	--green-color: #99E2D0;
 	--white-color: #fff;
 	--black-color: #000;
+	--gray-color: #EAEAEA;
 
 	--Roboto-font: "Roboto";
 	--Shrikhand-font: "Shrikhand";
-}
-
-/*NOTE ROBOTO FONT*/
-.Rob {
-	font-family: var(--Roboto-font);
 }
 
 /*NOTE SHRIKHAND FONT*/
 .Shr {
 	font-family: var(--Shrikhand-font);
 }
-
 
 /*NOTE POLICES HEADER and MAIN*/
 a {
@@ -55,13 +51,30 @@ a {
 
 .header-form h1 {
 	font-weight: 500;
-	font-size: 27px
+	font-size: 27px;
+	text-align: center;
+}
+
+.header-form p {
+	font-weight: 100;
+	font-size: 17px;
+	text-align: center;
+
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+  background-color: var(--gray-color);
 }
 
 button {
 	display: block;
-	width: 210px;
-	height: 50px;
+	width: 220px;
+	height: 53px;
 	border-radius: 25px;
 	margin-left: auto;
 	margin-right: auto;
@@ -72,25 +85,6 @@ button {
 	box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
 
 }
-/*-----------------------*\
-          MAIN
-\*-----------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*-----------------------*\
@@ -118,11 +112,17 @@ footer a {
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
+		height: 50px;
+		background-color: var(--gray-color);
+
 	}
 
 	.header-form h1, p {
 		text-align: center;
-		padding: 0 47px 0 47px;
+		padding: 0 45px 0 45px;
+	}
+	.header-form p {
+		margin-bottom: 30px;
 	}
 
 	.fas fa-map-marker {
@@ -131,9 +131,12 @@ footer a {
 	}
 
 	form {
-	display: flex;
-	padding: 16px 0 16px 0;
-	justify-items: center;
+		padding-top: 20px;
 	}
+
+	.btn {
+		margin-bottom: 20px;
+	}
+
 
 }
