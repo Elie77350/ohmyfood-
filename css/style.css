@@ -7,21 +7,30 @@ body {
 *{
 	text-decoration: none;
 	list-style: none;
-	color: inherit
+	color: inherit;
 }
 
 :root {
-	--violet-color: #9356DC;
-	--pink-color: #FF79DA;
-	--green-color: #99E2D0;
-	--white-color: #fff;
-	--black-color: #000;
-	--gray-color: #f6f6f6;
+	--violet-btn2: #9356DC;
+	--pink-btn1: #FF79DA;
+	--green-sticker: #99E2D0;
+	--white-card: #ffffff;
+	--black-footer: #000;
+	--gray-bg: #f6f6f6;
+	--gray-form: #EAEAEA;
+	--purple-bg: #f6edfe;
 
 	--Roboto-font: "Roboto";
 	--Shrikhand-font: "Shrikhand";
 }
 
+/*NOTE background-color logo*/
+.white-bg {
+	background-color: var(--white-card);
+}
+.gray-bg {
+	background-color: var(--gray-bg);
+}
 /*NOTE SHRIKHAND FONT*/
 .Shr {
 	font-family: var(--Shrikhand-font);
@@ -32,9 +41,19 @@ a {
 	font-family: "Roboto";
 }
 
-/*NOTE CARDS RADIUS and ELEMENTS*/
-.rad {
+/*NOTE IMG RADIUS*/
+.rd-t2 {
 	border-radius: 18px 18px 0 0;
+}
+
+/*NOTE TEXT CARD RADIUS*/
+ .rd-b2 {
+	border-radius: 0 0 18px 18px;
+}  
+
+/*NOTE MENU-ELEMENT RADIUS*/
+.rd-4 {
+	border-radius: 18px;
 }
 
 
@@ -42,27 +61,26 @@ a {
           HEADER
 \*-----------------------*/
 
-#logo {
+.logo {
 	padding: 16px 0 16px 0;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	}
 
-.header {
-	padding: 16px 0 16px 0;
-	/* box-shadow: 0 0 .5rem rgba(0,0,0,.25); */
-	position: relative;
-	z-index: 1000;
-	box-shadow: inset;	
+	#logo .bg-white {
+		background-color: var(--white-card);
+	}
 
-}
 
 .header h1 {
 	font-weight: 500;
 	font-size: 27px;
 	text-align: center;
 	padding: 0 27px;
+	margin-bottom: 0;
+	padding-top: 4px;
+	padding-bottom: 10px;
 }
 
 .header p {
@@ -78,7 +96,8 @@ a {
   justify-content: center;
   gap: 20px;
   height: 50px;
-  background-color: var(--gray-color);
+  background-color: var(--gray-form);
+	box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -88,17 +107,19 @@ button {
 	border-radius: 25px;
 	margin-left: auto;
 	margin-right: auto;
-	background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+	background: linear-gradient(162deg, var(--pink-btn1)0%, var(--violet-btn2) 100%);
 	border: none;
-	color: var(--white-color);
+	color: var(--white-card);
 	padding: 5px;
-	box-shadow: .25rem .25rem 10px rgba(0,0,0,.25);
+	box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+	margin-bottom: 40px;
+	cursor: pointer;
 }
 
-.menu-el .rad{
-	background-color: var(--gray-color);
-	border-radius: 18px;
-	padding: 10px;
+
+button:hover {
+	opacity: 0.8;
+	box-shadow: 0 5px 5px rgba(0,0,0,.35);
 }
 
 
@@ -107,24 +128,17 @@ button {
           MAIN
 \*-----------------------*/
 
-.fonctionnement-menu__wrapper {
-	display: flex;
-}
-
 article {
 padding: 32px 16px;
 }
 
 
 .card img {
-	border: 0 solid transparent;
 	object-fit: cover;
 	width: 100%;
 	height: 190px;
-	background-color: var(--white-color);
+	background-color: var(--white-card);
 	overflow: hidden;
-	border: 0px solid transparent;
-	border-radius: 18px 18px 0 0 ;
 }
 
 .text-card {
@@ -133,21 +147,21 @@ padding: 32px 16px;
 	margin: 0;
 	align-items: center;
 	padding: 16px;
-	background-color: var(--white-color);
-	border-radius:  0 0 18px 18px;
+	background-color: var(--white-card);
 }
 
 /*-----------------------*\
           FOOTER
 \*-----------------------*/
+
 footer {
-	background-color: var(--black-color);
-	color: var(--white-color);
+	background-color: var(--black-footer);
+	color: var(--white-card);
 	width: 100%;
 }
 
 footer a {
-	color: var(--white-color);
+	color: var(--white-card);
 }
 
 
@@ -157,44 +171,97 @@ footer a {
 \*-----------------------*/
 
 @media screen and (max-width: 768px) {
+	
+	#logo-bg-white {
+		background-color: var(--white-card);
+		padding-top: 20px;
+	}
+
 	.search-bar {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
 		height: 50px;
-		background-color: var(--gray-color);
+		background-color: var(--gray-form);
+	}
+	
+	.header {
+		padding: 0px 0 16px 0;
+		background-color: var(--gray-bg);
 	}
 
 	.header p {
 		margin-bottom: 30px;
 	}
-
+	
 	.fas fa-map-marker {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.menu-el .rad {
-		background-color: var(--gray-color);
-		padding: 25px;
-		margin-bottom: 18px;
 
-	}
+
 	/*NOTE SPACE AROUND CARDS*/
-.restaurants-section {		
-	padding: 32px 16px;
-	background-color: var(--gray-color);
+	.restaurants-section {		
+		padding: 32px 16px;
+		background-color: var(--gray-bg);
+	}
+
+	.text-card h3, p {
+		margin: 0;
+		padding-left: 0;
+		padding-top: 5px;
+	}
+
+	.Shr h3, ul { 
+		padding-top: 10px;
+		padding-left: 20px;
+		margin-top: 0; 
+	} 
+
+	.fonctionnement-section {
+		padding: 16px;
+	}
+	.fonctionnement-section h2 {
+		margin-bottom: 0;
+	}
+
+	.menu-el {
+		display: flex;
+		border-radius: 18px;
+		background-color: var(--gray-bg);
+		padding: 27px;
+		justify-content: space-evenly;
+		align-items: center;
+		box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+	}
+
+	.menu-el:hover {
+		background-color: var(--purple-bg);
+	}
+	.fas:hover {
+		background-color: var(--violet-btn2);
+		font-weight: 900;
+	}
+
+	li {
+		margin: 25px 0;
+	}
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		line-height: 10px;
+		padding-left: 10px;
+	}
+
+	footer h3 {
+		padding-left: 20px;
+		margin-bottom: 0;
+	}
 }
 
-.text-card h3, p {
-	margin: 0;
-	padding-left: 0;
-	padding-top: 5px;
-}
-
-
-}
 
 
 
