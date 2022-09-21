@@ -16,15 +16,21 @@ body {
 	--green-sticker: #99E2D0;
 	--green-text: #3b8468;
 	--white-card: #ffffff;
-	--black-footer: #000;
+	--black-foot: #000;
 	--gray-bg: #f6f6f6;
 	--gray-form: #EAEAEA;
 	--purple-bg: #f6edfe;
+	--icon-bg: #7e7e7e;
+	--footer-bg: #353535;
 
 	--Roboto-font: "Roboto";
 	--Shrikhand-font: "Shrikhand";
 }
 
+/*NOTE footer background*/
+.ft-bg {
+	background-color: var(--footer-bg);
+}
 /*NOTE background-color logo*/
 .white-bg {
 	background-color: var(--white-card);
@@ -61,17 +67,6 @@ a {
 /*-----------------------*\
           HEADER
 \*-----------------------*/
-
-.logo {
-	padding: 16px 0 16px 0;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-	#logo .bg-white {
-		background-color: var(--white-card);
-	}
 
 
 .header h1 {
@@ -138,28 +133,15 @@ button:hover {
 	overflow: hidden;
 }
 
-/* .text-card {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 16px;
-	background-color: var(--white-card);
-} */
-
 /*-----------------------*\
           FOOTER
 \*-----------------------*/
 
 footer {
-	background-color: var(--black-footer);
+	background-color: var(--footer-bg);
 	color: var(--white-card);
 	width: 100%;
 }
-
-footer a {
-	color: var(--white-card);
-}
-
 
 
 /*-----------------------*\
@@ -168,11 +150,6 @@ footer a {
 
 @media screen and (max-width: 768px) {
 	
-	#logo-bg-white {
-		background-color: var(--white-card);
-		padding-top: 20px;
-	}
-
 	.search-bar {
 		display: flex;
 		align-items: center;
@@ -194,6 +171,8 @@ footer a {
 	.fas fa-map-marker {
 		display: flex;
 		justify-content: space-between;
+		padding-right: 0;
+		margin-left: 25px;
 	}
 
 	/*NOTE SPACE AROUND CARDS*/
@@ -202,7 +181,7 @@ footer a {
 		background-color: var(--gray-bg);
 	}
 
-	.promo {
+	/* .promo {
 		position: absolute;
 		background-color: var(--green-sticker);
 		color: var(--green-text);
@@ -211,12 +190,25 @@ footer a {
 		right: 32%;
 		transform: translate(100px);
 
+	} */
+
+	.promo {
+		background-color: var(--green-sticker);
+		color: var(--green-text);
+		padding: 7.2px 10px;
+		position: relative;
+		left: 64px;
+		transform: translate(218%);
+		bottom: 178px;
+
 	}
 
+	.label-pos {
+		position: absolute;
+	}
 
 	.card {
 		margin-bottom: 20px;
-		box-shadow: 4px 4px 10px rgba(0,0,0,.1);
 		position: relative;
 	}
 
@@ -224,13 +216,19 @@ footer a {
 		display: flex;
 		flex-direction: column;
 		margin: 0;
-		padding: 6px 14px 14px 14px;
+		padding: 6px 14px 0 14px;
 		background-color: var(--white-card);
+		box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+
 	}
 
 	.far {
 		display: flex;
 		justify-content: flex-end;
+		font-size: x-large;
+		position: absolute;
+		bottom: 13%;
+		right: 7%;
 	}
 
 
@@ -247,9 +245,13 @@ footer a {
 	} 
 
 	.fonctionnement-section {
-		padding: 16px;
+		padding-left: 22px;
+		padding-right: 22px;
+		padding-bottom: 45;
+		padding: 16px 22px 45px 22px;
 	}
 	.fonctionnement-section h2 {
+		margin-top: 37px;
 		margin-bottom: 0;
 	}
 
@@ -257,19 +259,56 @@ footer a {
 		display: flex;
 		border-radius: 18px;
 		background-color: var(--gray-bg);
-		padding: 27px;
+		padding: 27px 27px 27px 15px;
 		justify-content: space-evenly;
 		align-items: center;
 		box-shadow: 4px 4px 10px rgba(0,0,0,.1);
 		position: relative;
 	}
+	.menu-el span {
+		margin-right: 22px;
+	}
 
-	.menu-el:hover {
+	.menu-el .fas.fa {
+		padding-right: 20px;
+		color: #7e7e7e;
+		font-size: 115%;		
+	}
+
+	.menu-el:hover  {
 		background-color: var(--purple-bg);
 	}
-	.fas:hover {
+	
+	.menu-el:hover i {
 		color: var(--violet-btn2);
+
 	}
+	
+	.full{
+    visibility: hidden;
+}
+
+.full:hover,
+.full:active {
+  background-image: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
+	transition-duration: 2s;
+	position: absolute;
+	bottom: 16%;
+	right: 6%;
+	font-size: x-large;
+
+}
+
+.fa-heart:hover,
+.fa-heart:active {
+  background: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
+	background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+	color: var(--white-card);
+	transition-duration: 2s;
+	}
+
 
 	.list-number {
 		display: flex;
@@ -282,28 +321,38 @@ footer a {
 		position: absolute;
 		left: -12px;
 	}
-
+	
 	div .list-number {
 		border-radius: 50%;
 	}
-
+	
 	li {
 		margin: 25px 0;
 	}
-
+	
 	footer {
 		display: flex;
 		flex-direction: column;
 		line-height: 10px;
 		padding-left: 10px;
 	}
-
+	
+	footer a {
+		font-weight: 400;
+	}
+	/*NOTE*/
+	.fa, .fas {
+		padding-right: 10px;
+	}
+	
 	footer h3 {
 		padding-left: 20px;
 		margin-bottom: 0;
 	}
-
 }
+
+
+
 
 
 
