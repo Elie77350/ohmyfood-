@@ -149,6 +149,11 @@ footer {
 \*-----------------------*/
 
 @media screen and (max-width: 768px) {
+
+	body,
+	html {
+  overflow-x: hidden;
+}
 	
 	.search-bar {
 		display: flex;
