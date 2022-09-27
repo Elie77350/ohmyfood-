@@ -13,8 +13,6 @@
 	align-items: center;
 	inset: 0;
 	z-index: -100;
-	/* background: #fff; */
-	/* background: linear-gradient(162deg, var(--pink-ld)0%, var(--violet-ld) 100%); */
 	background: linear-gradient(162deg, var(--pink-btn1)0%, var(--violet-btn2) 100%);
 	opacity: 0;
 	animation-fill-mode: forwards;
