@@ -1,11 +1,8 @@
-
+/* 
 :root {
 	--pink-ld: #FFC4EF;
 	--violet-ld: #C6A1F2;
 }
-
-
-
 
 .center-body {
 	display: flex;
@@ -21,19 +18,15 @@
 }
 
 .loader-circle-18 {
-	width: 70px;
-	height: 70px;
-	/* border-right: 7px solid #9356DC; */
-	border-right: 7px solid #ffffff;
-
-	background: linear-gradient(162deg, var(--pink-btn1)0%, var(--violet-btn2) 100%);
+	width: 75px;
+	height: 75px;
+	border-right: 7px solid #000000;
 	border-radius: 100%;
 	opacity: 0;
 	z-index: 100;
 	animation: anmR-loader-circle-18 3s linear, opacity_loader 3s;
 	display: inline-block;
 	position: relative;
-	font-size: xx-large;
 }
 
 
@@ -47,30 +40,21 @@
 }
 
 .loader-circle-18:before{
-	width: 40px;
-	height: 40px;
+	width: 45px;
+	height: 45px;
 	top: calc(50% - 20px);
 	left: calc(50% - 20px);
-	/* border-left: 4px solid #FF79DA; */
-	border-left: 4px solid #ffffff;
-
-	font-size: xx-large;
-
+	border-right: 7px solid #000000;
 }
 
 .loader-circle-18:after {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	top: calc(50% - 15px);
 	left: calc(50% - 20px);
 	border: 0;
-	/* border-right: 3px solid #99E2D0; */
-	border-right: 3px solid #ffffff;
-
-	font-size: xx-large;
-
+	border-right: 7px solid #000000;
 }
-
 
 
 @keyframes anmL-loader-circle-18 {
@@ -78,16 +62,15 @@
 		transform: scale(1);
 		transform: rotate(360deg);
 	}
+
 	70%{
 		transform: scale(1);
 		transform: rotate(0deg);
-		
 	}
 	
 	100%{
 		transform: scale(1);
 		transform: rotate(0deg);
-		
 	}
 }
 
@@ -95,20 +78,16 @@
 	0% {
 		transform: scale(1);
 		transform: rotate(0deg);
-		
 	}
 
 	70% {
 		transform: scale(1);
 		transform: rotate(720deg);
-	
-
 	}
 
 	100% {
 		transform: scale(0);
 		transform: rotate(0deg);
-	
 	}
 
 }
@@ -117,21 +96,17 @@
 	0% {
 		opacity: 0.9;
 		z-index: 100;
-
 	}
 
 	70% {
 		opacity: 0.9;
 		z-index: 100;
-
-
 	}
 
 	100% {
-
 		opacity: 0;
 		z-index: -100;
 	}
 
 
-}
+} */

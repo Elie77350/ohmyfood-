@@ -87,20 +87,21 @@ footer {
 
 	/*NOTE logo*/
 	.header h1 {
-		font-weight: 500;
-		font-size: 27px;
 		text-align: center;
-		padding: 0 27px;
-		margin-bottom: 0;
-		padding-top: 4px;
-		padding-bottom: 10px;
+		font-weight: 500;
+		font-size: 24px;
+		margin: 0;
+		padding: 15px 45px;
+		font-size: 32px;
 	}
 
 	img {
 		width: 100%;
-		position: relative;
-		height: 40vh;
-  	object-fit: cover;
+		object-fit: cover;
+		min-width: 360px;
+		height: 100%;
+		max-height: 300px;
+		margin: 0;
 	}
 
 		/*NOTE*/
@@ -117,15 +118,16 @@ footer {
 		transform: translate(-19%, 112%);
 	}
 
-	/*NOTE*/
 	.resto-name h2 {
-		margin-top: 0;
-		display: flex;
-		margin-bottom: 0;
-		padding-left: 21px;
-		padding-top: 15px;
+  	margin-top: 0;
+  	display: flex;
+  	margin-bottom: 0;
+  	padding-left: 4px;
+  	padding-top: 15px;
+  	padding-bottom: 30px;
 	}
 
+	
 	/*NOTE*/
 	.Shr h2 {
 		margin: 0;
@@ -136,6 +138,15 @@ footer {
 		margin: 0;
     padding-left: 15px;
 	}
+
+	.menu-el.title {
+		padding-bottom: 0;
+		font-weight: 300;
+		border: 1px solid blue;
+  	background-color: var(--white-card);
+		margin-bottom: 15px;
+	}
+
 
 	/*NOTE*/
 	.title {
@@ -158,6 +169,17 @@ footer {
 		padding-top: 5px;
 	}
 
+
+	.main-menu {
+  	background-color: var(--gray-bg);
+  	padding: 18px 15px 0 18px;
+  	border-radius: 40px 40px 0 0;
+  	overflow: hidden;
+  	position: relative;
+  	margin-top: -64px;
+	}
+
+
 	button {
 		display: block;
 		width: 220px;
@@ -170,7 +192,8 @@ footer {
 		color: var(--white-card);
 		padding: 5px;
 		box-shadow: 4px 4px 10px rgba(0,0,0,.25);
-		margin-bottom: 40px;
+		margin-bottom: 60px;
+		margin-top: 40px;
 		cursor: pointer;
 	}
 
