@@ -1143,6 +1143,7 @@ a {
         flex-direction: column;
         line-height: 10px;
         padding-left: 10px;
+        height: 250px;
     }
 
     footer a {
@@ -1169,6 +1170,8 @@ a {
         margin-top: 77px;
         margin-left: auto;
         margin-right: auto;
+        color: var(--white-card);
+        font-weight: 100;
     }
 
     footer li {
