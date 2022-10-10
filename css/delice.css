@@ -71,15 +71,15 @@ a {
     border-radius: 18px;
 }
 
-/*-----------------------*\
+/* /*-----------------------*\
       	FOOTER
 \*-----------------------*/
-footer {
-    /* background-color: var(--footer-bg); */
+/*footer {
+    /* background-color: var(--footer-bg);
     color: var(--white-card);
     width: 100%;
     line-height: 10px;
-}
+} */
 
 /*//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////\\\\\\\\\\\\\\\\*/
                                             /* M O B I L E */
@@ -494,6 +494,7 @@ footer {
     .Shr {
         font-size: 25px;
         font-weight: inherit;
+        padding-top: 20px;
     }
 
     .main-menu {
@@ -514,18 +515,6 @@ footer {
         margin-bottom: 0;
     }
 
-    .menu-el.title {
-        padding-bottom: 0;
-        font-weight: 300;
-        background-color: var(--white-card);
-        margin-bottom: 15px;
-        display: flex;
-        align-items: normal;
-        overflow: hidden;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
-        white-space: nowrap;
-    }
-
     .price {
         font-weight: 400;
         display: flex;
@@ -538,22 +527,31 @@ footer {
         visibility: hidden;
     }
 
-    .full:hover, .full:active {
+    .full:hover, 
+    .full:active {
+        transform: scale(1.15);
+        opacity: 100%;
         background-image: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
-        transition-duration: 2s;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        animation-duration: 1s;
         position: absolute;
         bottom: 16%;
         right: 6%;
-        font-size: x-large;
+
     }
 
-    .fa-heart:hover, .fa-heart:active {
+    .fa-heart:hover, 
+    .fa-heart:active {
+        opacity: 100%;
         background: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
+        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        color: var(--white-card);
-        transition-duration: 2s;
+        animation-duration: 1s;
     }
 
 
@@ -617,13 +615,15 @@ footer {
         font-weight: 300;
         background-color: var(--white-card);
         margin-bottom: 15px;
-        display: flex;
         align-items: normal;
         overflow: hidden;
-        box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+        width: 500px;
     }
 
     .price {
@@ -953,22 +953,31 @@ footer {
         visibility: hidden;
     }
 
-    .full:hover, .full:active {
+    .full:hover, 
+    .full:active {
+        transform: scale(1.15);
+        opacity: 100%;
         background-image: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
-        transition-duration: 2s;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        animation-duration: 1s;
         position: absolute;
         bottom: 16%;
         right: 6%;
-        font-size: x-large;
+
     }
 
-    .fa-heart:hover, .fa-heart:active {
+    .fa-heart:hover, 
+    .fa-heart:active {
+        opacity: 100%;
         background: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
+        -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        color: var(--white-card);
-        transition-duration: 2s;
+        animation-duration: 1s;
     }
 
     span .far {
@@ -1175,6 +1184,8 @@ footer {
         padding-top: 40px;
         color: var(--white-card);
     }
+
+    
 
 
 }   

@@ -281,6 +281,13 @@ a {
         justify-content: center;
     }
 
+    .fonctionnement-menu__wrapper ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     #main {
         position: relative;
     }
@@ -299,7 +306,7 @@ a {
     }
 
 
-     .fas {
+    .fas {
         font-size: larger;
     }
 
@@ -697,9 +704,7 @@ a {
         position: absolute;
         bottom: 16%;
         right: 6%;
-        font-size: x-large;
-        font-weight: 900;
-        color: transparent;
+
     }
 
     .fa-heart:hover, 
@@ -710,8 +715,7 @@ a {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
-        transition-duration: 1s;
-
+        animation-duration: 1s;
     }
 
     .list-number {
@@ -959,10 +963,6 @@ a {
         visibility: hidden;
     }
 
-    .full {
-        visibility: hidden;
-    }
-
     .full:hover, 
     .full:active {
         transform: scale(1.15);
@@ -977,7 +977,7 @@ a {
 
     .fa-heart:hover, 
     .fa-heart:active {
-        opacity: 100ù;
+        opacity: 100%;
        	background-image: linear-gradient(0deg, var(--pink-btn1), var(--violet-btn2));
         -webkit-background-clip: text;
         background-clip: text;
@@ -986,7 +986,6 @@ a {
         animation-duration: 1s;
     }
 
-   
     .card img {
         height: 200px;
     }
