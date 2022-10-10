@@ -12,105 +12,139 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/enchantee.css">
 	<title>La note enchantée</title>
 </head>
 
 <body>
 	<!-- HEADER -->
 	<div class="header">
-		<h1 class="Shr white-bg">ohmyfood</h1>
-		<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+		<div class="back">
+			<a href="../index.html">
+				<i class="fas fa-arrow-left"></i>
+			</a>
+			<h1 class="Shr white-bg">ohmyfood</h1>
+		</div>
+
+		<img id="bg-i" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
 			alt="table dressée présentant un plat gastronomique">
 	</div>
 	<!-- END HEADER -->
-	
+
 	<!-- MAIN -->
 	<div class="main-menu">
 		<div class="resto-name">
-			<h2 class="Shr">La note enchantée</h2>
-			<a href="#">
+			<span class="Shr">La note enchantée</span>
+			<span>
 				<i class="far fa-heart"></i>
-			</a>
+				<i class="far fa-heart full"></i>
+			</span>
 		</div>
-		<div class="section-entrées">
-			<p class="menu-e">ENTRÉES</p>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Ravioles de foie gras</h3>
-					<p>Accompagnés de leur crème à la truffe</p>
+		<div class="menu__wrapper">
+			<div class="section__entrances">
+				<p class="menu-e">ENTRÉES</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Ravioles de foie gras</h3>
+						<p>Accompagnés de leur crème à la truffe</p>
+					</div>
+					<span class="price">25€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<span>25€</span>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Caviar osciètre</h3>
+						<p>Sur blini à la farine de blé noir</p>
+					</div>
+					<span class="price">35€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">HOmar et espuma de potiron</h3>
+						<p>Mariné aux zests d'orange</p>
+					</div>
+					<span class="price">20€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
 			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Caviar osciètre</h3>
-					<p>Sur blini à la farine de blé noir</p>
+			<div class="section__meals">
+				<p class="menu-p">PLATS</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Noix de coquilles Saint-Jacques</h3>
+						<p>Sur lit de purée de céleri-rave</p>
+					</div>
+					<span class="price">40€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<span>35€</span>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Langoustine poêlée</h3>
+						<p>Purée de patate douce</p>
+					</div>
+					<span class="price">35€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Mijoté de queue de boeuf</h3>
+						<p>Et riz sauvage aux zests de citron</p>
+					</div>
+					<span class="price">44€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
 			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Homard et espuma de</h3>
-					<p>Mariné aux zests d'orange</p>
+			<div class="section__desserts">
+				<p class="menu-d">DESSERTS</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Macaron noisette et chocolat</h3>
+						<p>Glace au caramel brun et sel de Guérande</p>
+					</div>
+					<span class="price">18€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<span>20€</span>
-			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Foie gras de canard cuit entier</h3>
-					<p>Confiture de figue et pain toasté</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Baba au rhum revisité</h3>
+						<p>Avec son coulis de citron</p>
+					</div>
+					<span class="price">22€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<span>35€</span>
-			</div>
-			<p class="menu-p">PLATS</p>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Noix de coquilles Saint-Jacques</h3>
-					<p>Sur lit de purée de céleri-rave</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Tarte au citron méringuée</h3>
+						<p>Destructurée</p>
+					</div>
+					<span class="price">23€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<span>40€</span>
-			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Langoustine poêlée</h3>
-					<p>Purée de patate douce</p>
-				</div>
-				<span>44€</span>
-			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Mijoté de queue de boeuf</h3>
-					<p>Et riz sauvage aux zests de citron</p>
-				</div>
-				<span>44€</span>
-			</div>
-			<p class="menu-d">DESSERTS</p>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Macaron noisette et chocolat</h3>
-					<p>Glace au caramel brun et sel de Guérande</p>
-				</div>
-				<span>18€</span>
-			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Baba au rhum revisité</h3>
-					<p>Avec son coulis de citron</p>
-				</div>
-				<span>22€</span>
-			</div>
-			<div class="menu-el rd-4 title">
-				<div class="menu-item__wrapper">
-					<h3>Tarte au citron meringuée</h3>
-					<p>Destructurée</p>
-				</div>
-				<span>23€</span>
 			</div>
 		</div>
-		<a href="#">
-			<button type="button" class="btn">Commander</button>
-		</a>
+	</div>
+	<a href="#">
+		<button type="button" class="btn">Commander</button>
+	</a>
 	</div>
 	<!-- END MAIN -->
 
@@ -118,7 +152,7 @@
 	<div class="footer ft-bg">
 		<footer>
 			<h3 class="Shr">ohmyfood</h3>
-			<ul>
+			<ul class="ft-space">
 				<li>
 					<i class="fas fa-utensils"></i>
 					<a href="#">Proposer un restaurant</a>
@@ -136,7 +170,7 @@
 			</ul>
 		</footer>
 	</div>
-	<!--[ END FOOTER ]-->
+	<!-- END FOOTER -->
 </body>
 
 </html>

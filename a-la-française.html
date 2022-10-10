@@ -12,106 +12,139 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style4.css">
-	
+	<link rel="stylesheet" href="css/francaise.css">
 	<title>À la française</title>
 </head>
 
 <body>
 	<!-- HEADER -->
 	<div class="header">
-		<h1 class="Shr white-bg">ohmyfood</h1>
-		<img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-		alt="table dressée présentant un plat de poisson">
-	</div>
-	<div class="back-arrow">
-		<i class="fa-solid fa-arrow-left"></i>
+		<div class="back">
+			<a href="../index.html">
+				<i class="fas fa-arrow-left"></i>
+			</a>
+			<h1 class="Shr white-bg">ohmyfood</h1>
+		</div>
+
+		<img id="bg-i" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+			alt="table dressée présentant un plat gastronomique">
 	</div>
 	<!-- END HEADER -->
-	
+
 	<!-- MAIN -->
 	<div class="main-menu">
 		<div class="resto-name">
-			<h2 class="Shr">À la française</h2>
-			<a href="#">
+			<span class="Shr">À la française</span>
+			<span>
 				<i class="far fa-heart"></i>
-			</a>
+				<i class="far fa-heart full"></i>
+			</span>
 		</div>
-		<div class="section-entrées">
-			<p class="menu-e">ENTRÉES</p>
-			<div class="menu-el rd-4 title"">
-				<div class="menu-item__wrapper">
-					<h3>Tartare de poulpe acidulé</h3>
-					<p>Au zeste d'orange/p>
-				</div>
-					<span>25€</span>
-			</div>
-			<div class="menu-el rd-4 title"">
-				<div class="menu-item__wrapper">
-					<h3>Velouté de légumes d'antan</h3>
-					<p>Carotte, panais, topinambour</p>
-				</div>
-				<span>35€</span>
-			</div>
-			<div class="menu-el rd-4 title"">
-				<div class="menu-item__wrapper">
-					<h3>Soupe à l'oignon</h3>
-					<p>Revisitée</p>
-				</div>
-				<span>20€</span>
-			</div>
-		</div>
-		<div class="section-plats">
-				<p class="menu-p">PLATS</p>
-				<div class="menu-el rd-4 title"">
+		<div class="menu__wrapper">
+			<div class="section__entrances">
+				<p class="menu-e">ENTRÉES</p>
+				<div class="menu-el rd-4 title">
 					<div class="menu-item__wrapper">
-						<h3>Coquilles Saint-Jaqcques</h3>
-						<p>Accompagnées d'une purée de panais</p>
+						<h3 class="meal">Tartare de poulpe acidulé</h3>
+						<p>Aux zests d'orange</p>
 					</div>
-					<span>40€</span>
+					<span class="price">25€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
 				</div>
-				<div class="menu-el rd-4 title"">
+				<div class="menu-el rd-4 title">
 					<div class="menu-item__wrapper">
-						<h3>Magret de canard</h3>
+						<h3 class="meal">Velouté de légumes d'antan</h3>
+						<p>Carotte, panais, topinambour</p>
+					</div>
+					<span class="price">35€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Soupe à l'oignon</h3>
+						<p>Revisitée</p>
+					</div>
+					<span class="price">20€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+			</div>
+			<div class="section__meals">
+				<p class="menu-p">PLATS</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Coquilles Saint-Jacques</h3>
+						<p>Accompagnés d'une purée de panais</p>
+					</div>
+					<span class="price">40€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Magret de canard</h3>
 						<p>Et parmentier de pommes de terres</p>
 					</div>
-					<span>35€</span>
-				</div>
-				<div class="menu-el rd-4 title"">
-					<div class="menu-item__wrapper">
-						<h3>Pigeonneau d'Ille-et-Vilaine</h3>
-						<p>Sur son lit de gnocchis aux légumes</p>
+					<span class="price">35€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
 					</div>
-					<span>44€</span>
 				</div>
-		</div>
-			<div class="section-desserts">
-				<p class="menu-d">DESSERTS</p>
-				<div class="menu-el rd-4 title"">
+				<div class="menu-el rd-4 title">
 					<div class="menu-item__wrapper">
-						<h3>Pétales de violettes glacées</h3>
-						<p>Et purée de noisettes</p>
+						<h3 class="meal">Pigeonneau d'Ille-et -Vilaine</h3>
+						<p>Sur son lit dfe gnocchis aux légumes</p>
 					</div>
-					<span>18€</span>
-				</div>
-				<div class="menu-el rd-4 title"">
-					<div class="menu-item__wrapper">
-						<h3>Fondant au chocolat</h3>
-						<p>Revisité</p>
+					<span class="price">44€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
 					</div>
-					<span>22€</span>
-				</div>
-				<div class="menu-el rd-4 title"">
-					<div class="menu-item__wrapper">
-						<h3>Millefeuille croustillant</h3>
-						<p>Mirtylles et pâte d'amande</p>
-					</div>
-					<span>23€</span>
 				</div>
 			</div>
-		<a href="#">
-			<button type="button" class="btn">Commander</button>
-		</a>
+			<div class="section__desserts">
+				<p class="menu-d">DESSERTS</p>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Pétales de violettes glacées</h3>
+						<p>Et purée de noisettes</p>
+					</div>
+					<span class="price">18€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">fondant au chocolat</h3>
+						<p>Revisité</p>
+					</div>
+					<span class="price">22€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+				<div class="menu-el rd-4 title">
+					<div class="menu-item__wrapper">
+						<h3 class="meal">Millefeuille croustillant</h3>
+						<p>Myrtilles et pâte d'amande</p>
+					</div>
+					<span class="price">23€</span>
+					<div class="check">
+						<i class="fas fa-check-circle"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#">
+		<button type="button" class="btn">Commander</button>
+	</a>
 	</div>
 	<!-- END MAIN -->
 
@@ -119,7 +152,7 @@
 	<div class="footer ft-bg">
 		<footer>
 			<h3 class="Shr">ohmyfood</h3>
-			<ul>
+			<ul class="ft-space">
 				<li>
 					<i class="fas fa-utensils"></i>
 					<a href="#">Proposer un restaurant</a>
@@ -138,7 +171,6 @@
 		</footer>
 	</div>
 	<!-- END FOOTER -->
-
 </body>
 
 </html>
